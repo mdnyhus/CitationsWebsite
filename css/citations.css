@@ -1,0 +1,41 @@
+body {
+	margin: 0
+}
+
+.histogramContainer {
+	width: 65%;
+	height: 100%;
+}
+
+.histogram {
+	height: calc(100vh / 3);
+}
+
+.controlContainer {
+	width: calc(35% - 20px);
+	position: absolute;
+	top: 100px;
+	right: 0;
+}
+
+#numPapersInput {
+	border: 0;
+}
+
+.sliderContainer {	
+	padding-right: 80px;
+	padding-left: 6px;
+}
+
+#fieldSelectorContainer {
+	top: 20px;
+    position: relative;
+}
+
+.textInput {
+	width: 30px;
+}
+
+input.invalid {
+	border:1px solid #ff0000;
+}
