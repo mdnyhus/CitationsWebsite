@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Citations</title>
+	<script src="./js/jquery-3.1.0.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="./css/jquery-ui.min.css">
+	<link rel="stylesheet" href="./css/jquery-ui.theme.min.css">
+	<script src="./js/plotly-latest.min.js"></script>
+	<script src="./js/citations.js"></script>
+	<link rel="stylesheet" href="./css/citations.css">
+	<script src="./data/artHistogram.js"></script>
+	<script src="./data/biologyHistogram.js"></script>
+	<script src="./data/businessHistogram.js"></script>
+	<script src="./data/chemistryHistogram.js"></script>
+	<script src="./data/computerScienceHistogram.js"></script>
+	<script src="./data/economicsHistogram.js"></script>
+	<script src="./data/engineeringHistogram.js"></script>
+	<script src="./data/environmentalScienceHistogram.js"></script>
+	<script src="./data/geographyHistogram.js"></script>
+	<script src="./data/geologyHistogram.js"></script>
+	<script src="./data/historyHistogram.js"></script>
+	<script src="./data/materialsScienceHistogram.js"></script>
+	<script src="./data/mathematicsHistogram.js"></script>
+	<script src="./data/medicineHistogram.js"></script>
+	<script src="./data/philosophyHistogram.js"></script>
+	<script src="./data/physicsHistogram.js"></script>
+	<script src="./data/politicalScienceHistogram.js"></script>
+	<script src="./data/psychologyHistogram.js"></script>
+	<script src="./data/sociologyHistogram.js"></script>
+</head>
+<body>
+
+<!-- <h1>These are citation things....</h1> -->
+<div class="histogramContainer">
+	<div id="histogram1" class="histogram"></div>
+	<div id="histogram2" class="histogram"></div>
+	<div id="histogram3" class="histogram"></div>
+</div>
+
+<div class="controlContainer">
+	<div id="papersCareerRadioContainer">
+		<input type="radio" id="papersRadio" name="papersCareerRadio" onclick="papersRadioClick()" checked>
+		<label for="papersRadio">Filter by number of papers</label>
+		<input type="radio" id="careerRadio" name="papersCareerRadio" onclick="careerRadioClick()">
+		<label for="careerRadio">Filter by length of career</label>
+	</div>
+	
+	<p id="numPapersInput"></p>
+	
+	<div class="sliderContainer">
+		<div id="slider-range"></div>
+	</div>
+	
+	<p class="textInputContainer">
+		<label for="textInputMin">Min: </label>
+		<input type="text" id="textInputMin" name="textInput" class="textInput" oninput="minInput()">
+		<label for="textInputMax">Max: </label>
+		<input type="text" id="textInputMax" name="textInput" class="textInput" oninput="maxInput()">
+	</p>
+	
+	<div id="fieldSelectorContainer">
+		<p>Fields:</p>
+	</div>
+</div>
+</body>
+</html>
